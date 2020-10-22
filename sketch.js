@@ -35,6 +35,7 @@ function draw() {
   }else{
     bullet.velocityX=speed
   } 
+  fill("white")
   text(num,15,15)
   drawSprites();
 }
