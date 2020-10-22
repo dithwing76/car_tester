@@ -26,7 +26,7 @@ function draw() {
     if (num<10){
       wall.shapeColor="green"
     }
-    if (num>100&&num<180){
+    if (num>100&&num<180){ 
       wall.shapeColor="yellow"
     }
     if (num>10){
