@@ -33,7 +33,7 @@ function draw() {
       wall.shapeColor="red"
     }
   }else{
-    car.velocityX=speed
+    bullet.velocityX=speed
   }
   drawSprites();
 }
