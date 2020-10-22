@@ -20,7 +20,7 @@ function draw() {
   background(0,0,0);     
   if(wall.x-bullet.x<bullet.width/2+wall.width/2){
     bullet.velocityX=0
-    num=0.5*weight*speed*speed
+    num=0.5*weight*speed*speed 
     num=num/thickness*thickness*thickness
     console.log(num)
     if (num<10){
