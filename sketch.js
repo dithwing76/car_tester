@@ -18,8 +18,8 @@ function setup() {
 
 function draw() {
   background(0,0,0);     
-  if(wall.x-car.x<car.width/2+wall.width/2){
-    car.velocityX=0
+  if(wall.x-bullet.x<bullet.width/2+wall.width/2){
+    bullet.velocityX=0
     num=0.5*weight*speed*speed
     num=num/thickness*thickness*thickness
     console.log(num)
