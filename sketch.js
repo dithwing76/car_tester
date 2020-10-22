@@ -34,6 +34,6 @@ function draw() {
     }
   }else{
     bullet.velocityX=speed
-  }
+  } 
   drawSprites();
 }
