@@ -1,35 +1,35 @@
-var car
-var wall
+var bullet, speed,weight
+var wall,thickness
 var num
-var speed
-var weight
+
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  speed=random(55,90)
-  weight=random(400,1500)
-  car=createSprite(50, 200, 50, 50);
+  speed=random(223,321)
+  weight=random(30,52)
+  bullet=createSprite(50, 200, 60, 20);
+  bullet.shapeColor="white"
   num =0
 
 
-
-  wall=createSprite(1500,200,60,windowHeight/2)
+  thickness=random(22,83)
+  wall=createSprite(1500,200,thickness,windowHeight/2)
 }
 
 function draw() {
-  background(255,255,255);  
+  background(black);  
   if(wall.x-car.x<car.width/2+wall.width/2){
     car.velocityX=0
     num=0.5*weight*speed*speed
-    num=num/22500
+    num=num/thickness*thickness*thickness
     console.log(num)
-    if (num<100){
+    if (num<10){
       wall.shapeColor="green"
     }
     if (num>100&&num<180){
       wall.shapeColor="yellow"
     }
-    if (num>180){
+    if (num>10){
       wall.shapeColor="red"
     }
   }else{
