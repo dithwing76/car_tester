@@ -1,6 +1,7 @@
 var bullet, speed,weight
 var wall,thickness
 var num
+var num2
 
 
 function setup() {
@@ -11,7 +12,7 @@ function setup() {
   bullet.shapeColor="white"
   num =0
 
-
+  num2=0
   thickness=random(22,83)
   wall=createSprite(1500,200,thickness,windowHeight/2)
 }
@@ -21,7 +22,8 @@ function draw() {
   if(wall.x-bullet.x<bullet.width/2+wall.width/2){
     bullet.velocityX=0
     num=0.5*weight*speed*speed 
-    num=num/thickness*thickness*thickness
+    num2=thickness*thickness*thickness
+    num=num/num2
     console.log(num)
     if (num<10){
       wall.shapeColor="green"
